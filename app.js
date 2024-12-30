@@ -212,8 +212,8 @@ const socialNet = [
 
 socialNet.forEach((network) => console.log(network.name, network.url));
 
-.filter --- od vec postojeceg niza,daje nov niz(array) sa clanovima koji
-zadovaljavaju uslov koji smo mi postavili.
+//.filter i .map --- od vec postojeceg niza,daje nov niz(array) sa clanovima koji
+//zadovaljavaju uslov koji smo mi postavili.
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 evenNumbers = [];
@@ -270,3 +270,18 @@ const oldRetailCompanies = companies.filter(
   (company) => company.founded <= 2000 && company.category === "retail"
 );
 console.log(oldRetailCompanies);
+
+//.map
+
+const companiesName = companies.map((company) => {
+  return company.name;
+});
+console.log(companiesName);
+let date = new Date();
+const year = date.getFullYear();
+console.log(year);
+console.log(date);
+const companiesAge = companies.map((company) => {
+  return `${company.name} -- ${year - company.founded}`;
+});
+console.log(companiesAge);
