@@ -285,3 +285,38 @@ const companiesAge = companies.map((company) => {
   return `${company.name} -- ${year - company.founded}`;
 });
 console.log(companiesAge);
+
+// chain filter and .map mathods
+
+const oldCompaniesNames = companies
+  .filter((company) => {
+    //(company) parameter za .filter, moze da bude sta god
+    return company.founded <= 2000;
+  })
+  .map((oldCompanies) => {
+    //(oldCompanies) ---nov parameter za .map u lancu
+    return oldCompanies.name;
+  });
+console.log(oldCompaniesNames);
+
+const arr = [2, 23, 3, 12, 45, 66, 76, 54];
+console.log(arr);
+const squaredAndDoudled = arr
+  .map((number) => {
+    return Math.sqrt(number);
+  })
+  .map((squared) => {
+    //(sqared) ---nov parametar za sl. map u lancu
+    return squared * 2;
+  });
+console.log(squaredAndDoudled);
+
+// short version
+
+const squaredAndDoudled2 = arr
+  .map((number) => Math.sqrt(number))
+  .map((squared) => squared * 2);
+console.log(squaredAndDoudled2);
+
+
+
