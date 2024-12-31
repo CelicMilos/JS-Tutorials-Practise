@@ -318,5 +318,37 @@ const squaredAndDoudled2 = arr
   .map((squared) => squared * 2);
 console.log(squaredAndDoudled2);
 
+//.reduce  ----dobar sabiranje vrednosti u arr tj. sazimanja vise vrednosti u jendu
+//u callback funkciji unose se dva parametra:accumulator-predhodna vrednost(zbir vrednosti)
+//i currentValue-vrednost koja se sledeca dodaje
+//i vrednost od koje se pocinje sabiranje koja se ubacuje na kraju funkcije
+
+
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const sum = numbers.reduce(function (accumulator, currentValue) {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);
+
+const shoppingCart = [
+  { product: "Item 1", price: 12 },
+  { product: "Item 2", price: 135 },
+  { product: "Item 3", onSale: 20, price: 5 },
+  { product: "Item 4", onSale: 10, price: 15 },
+  { product: "Item 4", price: 15 },
+  { product: "Item 4", price: 15 },
+  { product: "Item 4", onSale: 10, price: 15 },
+];
+const totalPrice = shoppingCart.reduce(function (acc, curr) {
+  return acc + curr.price;
+}, 0);
+console.log(totalPrice);
+
+// vezanje sa drugim metodama
+
+const itemsOnSale = shoppingCart
+  .filter((itemOnSale) => itemOnSale.onSale)
+  .reduce((acc, curr) => acc + curr.price, 0);
+console.log(itemsOnSale);
 
 
