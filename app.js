@@ -351,4 +351,77 @@ const itemsOnSale = shoppingCart
   .reduce((acc, curr) => acc + curr.price, 0);
 console.log(itemsOnSale);
 
+//Challenge 6,array mathods--sort young people
+
+const people = [
+  {
+    firstName: "Clam",
+    lastName: "Fandango",
+    email: "clam@gmail.com",
+    age: 25,
+  },
+  {
+    firstName: "Steven",
+    lastName: "hoking",
+    email: "clam@gmail.com",
+    age: 23,
+  },
+  {
+    firstName: "Matt",
+    lastName: "Barry",
+    email: "barry@gmail.com",
+    age: 43,
+  },
+  {
+    firstName: "Suzy",
+    lastName: "Sue",
+    email: "suzy@gmail.com",
+    age: 21,
+  },
+  {
+    firstName: "Clif",
+    lastName: "Ferrario",
+    email: "clif@gmail.com",
+    age: 32,
+  },
+  {
+    firstName: "Robin",
+    lastName: "Banks",
+    email: "robin@gmail.com",
+    age: 22,
+  },
+];
+console.log(people);
+const youngPeople = people
+  .filter((person) => person.age <= 25)
+  .map((person) => ({
+    name: person.firstName + ` ` + person.lastName,
+    emali: person.email,
+  }));
+console.log(youngPeople);
+namesOfPeople = youngPeople.map((person) => person.name);
+console.log(namesOfPeople);
+
+Challenge 7 array methods --add all positive numbers an all nagative numbers
+
+const numbers = [1, 2, -4, 23, -13, 33, -56, 45, -42, 78, -98];
+console.log(numbers);
+
+const positiveSum = numbers
+  .filter((num) => num >= 0)
+  .reduce((acc, num) => acc + num, 0);
+console.log(positiveSum);
+
+const negativeSum = numbers
+  .filter((num) => num <= 0)
+  .reduce((acc, num) => acc + num, 0);
+console.log(negativeSum);
+
+// Challenge 8 array metods--capitalized words
+
+const words = ["developer", "programer", "coder"];
+console.log(words);
+const capitalWords = words.map((word) => word[0].toUpperCase() + word.slice(1));
+console.log(capitalWords);
+
 
