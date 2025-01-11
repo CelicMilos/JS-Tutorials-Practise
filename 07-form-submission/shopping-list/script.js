@@ -7,6 +7,7 @@ function onSubmit(e) {
   const priority = document.getElementById("priority-input").value;
   console.log(item, priority);
   if (item === "" || priority === "0") {
+  // header.textContent = "Please fill in all fields.";
     alert("PLease fill n all the fields");
     return;
   }
