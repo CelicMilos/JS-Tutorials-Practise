@@ -1,17 +1,27 @@
 const form = document.getElementById("item-form");
-
 function onSubmit(e) {
   e.preventDefault();
 
   const item = document.getElementById("item-input").value;
-  const priority = document.getElementById("priority-input").value;
-  console.log(item, priority);
-  if (item === "" || priority === "0") {
-  // header.textContent = "Please fill in all fields.";
-    alert("PLease fill n all the fields");
+  const quantity = document.getElementById("priority-input").value;
+  console.log(item, quantity);
+  if (item === "" || quantity === "0") {
+    header.textContent = "Please fill in all fields.";
+    header.style.color = "#ab2e26";
+    setTimeout(() => {
+      header.textContent = "Shopping list";
+      header.style.color = "";
+    }, 3000);
     return;
+  } else {
+    header.textContent = `${item}!Verry nice!`;
+    header.style.color = "#ab2e26";
+    setTimeout(() => {
+      header.textContent = "Shopping list";
+      header.style.color = "";
+    }, 3000);
   }
-}
+
 function onSubmit2(e) {
   e.preventDefault();
   const formData = new FormData(form);
