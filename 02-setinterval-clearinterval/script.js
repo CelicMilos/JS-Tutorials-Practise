@@ -27,14 +27,14 @@ function changeRandomColor() {
 }
 function stopChange() {
   // clearInterval(intervalId);
-  // ako ide samo ClearInterval onda funkcija iznad staje
+  // ako ide samo ClearInterval onda funkcija iznad ide jednom
 
   if (intervalId) {
     clearInterval(intervalId);
     intervalId = null;
     // na ovaj nacin proveravamo da li intervalId radi,
     // pa ga stopiramo i prebacujemo na null
-    // kako bi se na dugme start ponovo pokrenula gornja funkcija
+    // kako bi se na dugme start ponovo pokrenula gornja funkcija vise puta
   }
 }
 document.getElementById("start").addEventListener("click", startChangeColor);
