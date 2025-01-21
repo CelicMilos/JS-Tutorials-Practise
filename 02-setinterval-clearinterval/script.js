@@ -22,6 +22,8 @@ function startChangeColor() {
 function changeRandomColor() {
   const randomColor = Math.floor(Math.random() * 16777215).toString(16);
   document.body.style.backgroundColor = `#${randomColor}`;
+  document.body.style.transition = "all 2s";
+  document.body.style.transformOrigin = "top left";
 }
 function stopChange() {
   // clearInterval(intervalId);
