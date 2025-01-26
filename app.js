@@ -92,9 +92,9 @@ for (x = 0; x <= 20; x++) {
   console.log(x);
 }
 
-while loop ---ista funkcija kao for loop samo malo drugacija sintaksa
-ali je bolji ako ne znamo koliko iteracija treba program daa uradi
-kod array koja se popunjava dinamicki tj. npr. kada arr puni sa korisnicke strane
+// while loop ---ista funkcija kao for loop samo malo drugacija sintaksa
+// ali je bolji ako ne znamo koliko iteracija treba program daa uradi
+// kod array koja se popunjava dinamicki tj. npr. kada arr puni sa korisnicke strane
 
 let n = 0;
 while (n <= 10) {
@@ -119,7 +119,7 @@ while (m <= 5) {
   m++;
 }
 
- do while loop --- ce pokrenuti kod barem jednom iako uslov nije ispostovan
+ // do while loop --- ce pokrenuti kod barem jednom iako uslov nije ispostovan
 
 e = 10;
 do {
@@ -142,7 +142,7 @@ for (i = 0; i <= 35; i++) {
   console.log(i);
 }
 
-for of loop ---moderniji od for i while.Nema iteracija sa i=0;i<=arr.length;i++
+// for of loop ---moderniji od for i while.Nema iteracija sa i=0;i<=arr.length;i++
 
 const users = [
   "Steven Weinberg",
@@ -165,7 +165,7 @@ for (letters of greating) {
   console.log(letters);
 }
 
-for in loop
+// for in loop
 
 const colorObj = {
   color1: "green",
@@ -178,7 +178,7 @@ for (const key in colorObj) {
   console.log(key, colorObj[key]);
 }
 
-.forEach loop
+// .forEach loop
 
 const books = [
   "On the beach",
