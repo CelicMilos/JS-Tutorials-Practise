@@ -25,7 +25,7 @@ try {
   console.log(error);
 }
 
-// Ako na primer sa API zahtevima tj. podacima sa drugih sajtova za koje nismo sigurni
+// Ako npr.ocekujemo gresku sa API zahtevima sa drugih sajtova za koje nismo sigurni
 // da  li ce stici ili sta ce oupste stici,npr.:
 
 const getUsers = async () => {
@@ -57,7 +57,7 @@ const getStats = async () => {
 };
 getStats();
 
-// Moze i bez catch u funkciji vec kao dodatak .catch() ali je malo ruzno
+// Moze i bez try/catch u funkciji vec kao dodatak .catch() ali je malo ruzno
 
 const getPosts = async () => {
   const response = await fetch(
