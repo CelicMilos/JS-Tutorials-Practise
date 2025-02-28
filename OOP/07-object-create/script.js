@@ -1,5 +1,5 @@
 // Jedan nacin da se prave prototipivi bez CF
-// Kreaira se obican objekat sa fukcijama od kojih zelimo da napraimo prototipove
+// Kreaira se obican objekat sa funkcijama od kojih zelimo da napraimo prototipove
 const rectanglePrototypes = {
   area: function () {
     return this.width * this.height;
@@ -25,14 +25,14 @@ console.log(rect.perimeter());
 console.log(rect.area());
 console.log(rect.isSquare());
 
-// Sa tom funkcijom mogu da se prve koliko hocemo objekata
+// Sa tom funkcijom mogu da se prve koliko hocemo objekata koa i kod CF
 const rect2 = createRactangle(14, 18);
 console.log(rect2);
 console.log(rect2.perimeter());
 
 // I mogu da se ubacuju  nova svojstva i funkcije ukoliko nam trebaju
 const rect3 = createRactangle(12, 15);
-rect3.name = "HRS:Rectangle the III";
+rect3.name = "HRH:Rectangle the III";
 rect3.mesage = function () {
   if (rect3.isSquare() === false) {
     console.log(rect3.name + " is not a sqare.Aw...");
