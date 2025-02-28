@@ -65,7 +65,7 @@ calculator(425, 67, "/");
 calculator(7, 4, "*");
 calculator(7, 4, "hhf");
 
-Break and Continue in for loops
+//Break and Continue in for loops
 
 for (let i = 0; i <= 21; i++) {
   if (i === 1 || i % 7 === 0) {
@@ -126,7 +126,7 @@ do {
   console.log("NUmber " + e);
 } while (e <= 9);
 
-Challange no. 5 ---FIZZBUZZ
+// Challange no. 5 ---FIZZBUZZ
 
 for (i = 0; i <= 35; i++) {
   if (i % 3 === 0 && i % 5 === 0) {
